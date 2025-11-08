@@ -1,0 +1,21 @@
+:root {
+  --docsearch-primary-color: #54ff79;
+  --vp-home-hero-name-color: #3eaf7c !important;
+  --accent-color: #3eaf7c !important;
+  --text-color: #2c3e50;
+  --border-color: #eaecef;
+  --code-bg-color: #282c34;
+  --arrow-bg-color: #ccc;
+  --badge-tip-color: #42b983;
+  --badge-warning-color: darken(#ffe564, 35%);
+  --badge-error-color: #da5961;
+}
+
+:root {
+  --vp-c-brand-1: #009d08;
+  --vp-c-brand-2: #00941e;
+}
+
+body {
+  background-color: black !important;
+}
