@@ -85,7 +85,7 @@ Diese Dokumentation ist ein Living Document. Verbesserungen und Ergänzungen sin
 
 ## 📄 Lizenz
 
-MIT License - Siehe [LICENSE](LICENSE) für Details.
+MIT License
 
 ## 🔗 Links
 
