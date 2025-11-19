@@ -7,7 +7,7 @@ export default defineConfig({
     ['link', { rel: 'stylesheet', href: '/assets/styles/custom.css' }] 
   ],
   title: "Developer Docs",
-  description: "Accessibility Documentation",
+  description: "Fullstack Documentation",
   base: '/',
   vite: {
     css: {
@@ -22,7 +22,6 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Accessibility', link: '/docs/docs/' },
       { text: 'Fullstack Learning', link: '/fullstack/frontend/' },
       //{ text: 'Examples', link: '/markdown-examples' }
     ],
