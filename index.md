@@ -5,15 +5,11 @@ layout: home
 hero:
   name: "Developer Documentation"
   text: "Fullstack & Accessibility"
-  tagline: Umfassende Dokumentation für Fullstack-Entwicklung und Web-Accessibility Standards (WCAG 2.2)
+  tagline: Umfassende Dokumentation für Fullstack-Entwicklung
   actions:
     - theme: brand
       text: Fullstack Learning
       link: fullstack/frontend/
-
-    - theme: brand
-      text: Accessibility Docs
-      link: docs/docs
 
     - theme: alt
       text: Getting Started
