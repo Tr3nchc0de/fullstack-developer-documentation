@@ -35,7 +35,7 @@ Frontend-Entwicklung ist die Kunst und Wissenschaft der Erstellung von Benutzero
 
 ## Nächste Schritte
 
-- [HTML & CSS Grundlagen](./html-css.md)
+- [HTML](./html.md)
 - [JavaScript Essentials](./javascript.md)
 - [React.js Framework](./react.md)
 - [Build Tools](./build-tools.md)

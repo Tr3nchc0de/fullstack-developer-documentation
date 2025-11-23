@@ -21,8 +21,8 @@ HTML ist die Standard-Markup-Sprache zum Erstellen von Webseiten. Sie definiert 
 - [Listen](./html/html-listen.md)
 - [Bilder & Grafiken](./html/html-bilder-grafiken.md)
 - [ARIA-Attribute](./html/html-aria-attribute.md)
-- [Custom Data Attributes](./html-custom-data-attributes.md)
-- [Templates & Shadow DOM](./html-templates-shadow-dom.md)
+- [Custom Data Attributes](./html/html-custom-data-attributes.md)
+- [Templates & Shadow DOM](./html/html-templates-shadow-dom.md)
 
 ### Mein Lernfortschritt
 - [ ] HTML-Grundlagen verstehen
