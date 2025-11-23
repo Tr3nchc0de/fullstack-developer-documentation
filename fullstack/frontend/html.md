@@ -8,10 +8,21 @@ HTML (HyperText Markup Language) und CSS (Cascading Style Sheets) bilden das Fun
 HTML ist die Standard-Markup-Sprache zum Erstellen von Webseiten. Sie definiert die Struktur und den Inhalt einer Webseite durch verschiedene Elemente und Tags.
 
 ### Wichtige HTML5-Konzepte
-- **Semantische Elemente** - `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<footer>`
-- **Formulare** - Input-Typen, Validierung, Accessibility
-- **Multimedia** - `<video>`, `<audio>`, `<canvas>`
-- **APIs** - LocalStorage, Geolocation, Web Workers
+
+### Vertiefende Seiten zu den HTML5-Konzepten
+
+- [Semantische Elemente](./html/html-semantische-elemente.md)
+- [Formulare](./html/html-formulare.md)
+- [Multimedia](./html/html-multimedia.md)
+- [APIs](./html/html-apis.md)
+- [Meta-Tags](./html/html-meta-tags.md)
+- [Links & Navigation](./html/html-links-navigation.md)
+- [Tabellen](./html/html-tabellen.md)
+- [Listen](./html/html-listen.md)
+- [Bilder & Grafiken](./html/html-bilder-grafiken.md)
+- [ARIA-Attribute](./html/html-aria-attribute.md)
+- [Custom Data Attributes](./html-custom-data-attributes.md)
+- [Templates & Shadow DOM](./html-templates-shadow-dom.md)
 
 ### Mein Lernfortschritt
 - [ ] HTML-Grundlagen verstehen

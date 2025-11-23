@@ -1,6 +1,30 @@
 import { defineConfig } from 'vitepress'
+import fs from 'fs'
+import path from 'path'
 
 // https://vitepress.dev/reference/site-config
+function getJavaScriptFilesSidebar() {
+  const dirPath = path.resolve(process.cwd(), 'fullstack/frontend/javascript')
+  if (!fs.existsSync(dirPath)) return []
+  return fs.readdirSync(dirPath)
+    .filter(file => file.endsWith('.md'))
+    .map(file => ({
+      text: file.replace('.md', ''),
+      link: `/fullstack/frontend/javascript/${file}`
+    }))
+}
+
+function getHtmlFilesSidebar() {
+  const dirPath = path.resolve(process.cwd(), 'fullstack/frontend/html')
+  if (!fs.existsSync(dirPath)) return []
+  return fs.readdirSync(dirPath)
+    .filter(file => file.endsWith('.md'))
+    .map(file => ({
+      text: file.replace('.md', ''),
+      link: `/fullstack/frontend/html/${file}`
+    }))
+}
+
 export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/assets/favicon.ico' }],
@@ -19,7 +43,6 @@ export default defineConfig({
     }
   },
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Fullstack Learning', link: '/fullstack/frontend/' },
@@ -33,8 +56,8 @@ export default defineConfig({
         text: 'Frontend Development',
         items: [
           { text: 'Frontend Übersicht', link: '/fullstack/frontend/' },
-          { text: 'HTML & CSS', link: '/fullstack/frontend/html-css.md' },
-          { text: 'JavaScript', link: '/fullstack/frontend/javascript.md' },
+          { text: 'HTML & CSS',collapsed: true, link: '/fullstack/frontend/html.md', items: getHtmlFilesSidebar() },
+          { text: 'JavaScript',collapsed: true, link: '/fullstack/frontend/javascript.md', items: getJavaScriptFilesSidebar() },
           { text: 'React.js', link: '/fullstack/frontend/react.md' },
           { text: 'Build Tools', link: '/fullstack/frontend/build-tools.md' },
         ]

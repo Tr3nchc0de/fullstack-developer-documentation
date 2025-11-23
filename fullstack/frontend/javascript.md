@@ -7,6 +7,29 @@ JavaScript ist die Programmiersprache des Web und ermöglicht Interaktivität, d
 ### Was ist JavaScript?
 JavaScript ist eine dynamische, interpretierte Programmiersprache, die ursprünglich für die Erstellung interaktiver Webseiten entwickelt wurde. Heute wird es sowohl im Frontend als auch im Backend (Node.js) verwendet.
 
+## Wichtige JavaScript-Techniken
+
+
+### Vertiefende Seiten zu den Techniken
+
+- [Variablendeklaration](./javascript/js-variablendeklaration.md)
+- [Datentypen](./javascript/js-datentypen.md)
+- [Funktionen](./javascript/js-funktionen.md)
+- [Control Flow](./javascript/js-control-flow.md)
+- [DOM-Manipulation](./javascript/js-dom-manipulation.md)
+- [Event-Handling](./javascript/js-event-handling.md)
+- [Asynchrone Programmierung](./javascript/js-async.md)
+- [Fehlerbehandlung](./javascript/js-error-handling.md)
+- [Modularisierung](./javascript/js-modules.md)
+- [Array-Methoden](./javascript/js-array-methoden.md)
+- [Objekt-Methoden](./javascript/js-objekt-methoden.md)
+- [Fetch API](./javascript/js-fetch-api.md)
+- [LocalStorage & SessionStorage](./javascript/js-storage.md)
+- [Testing](./javascript/js-testing.md)
+- [Debugging](./javascript/js-debugging.md)
+
+
+
 ### ES6+ Features
 - **Let/Const** - Moderne Variablendeklaration
 - **Arrow Functions** - Kompakte Funktionssyntax
@@ -78,6 +101,29 @@ async function fetchData() {
         console.error('Error:', error);
     }
 }
+```
+
+### 5. ForEach Mapping
+```Javascript
+// Using Map to store events by their ID for efficient access
+function showEvents(events) {
+    const eventMap = new Map();
+    events.forEach(event => {
+        eventMap.set(event.id, event);
+    });
+    const container = document.getElementById('events-container');
+    eventMap.forEach((event) => {
+        const eventDiv = document.createElement('div');
+        eventDiv.className = 'event';
+        eventDiv.innerHTML = `
+            <div>Event ID: ${event.id}</div>
+            <h2>Name: ${event.name}</h2>
+            <div>Date: ${event.date}</div>
+        `;
+        container.appendChild(eventDiv);
+    });
+}
+showEvents(events);
 ```
 
 ## JavaScript im Browser

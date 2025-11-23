@@ -4,7 +4,7 @@ layout: home
 
 hero:
   name: "Developer Documentation"
-  text: "Fullstack & Accessibility"
+  text: "Fullstack Learning Journey"
   tagline: Umfassende Dokumentation für Fullstack-Entwicklung
   actions:
     - theme: brand
